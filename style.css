@@ -10,6 +10,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -102,6 +103,12 @@ body {
   box-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 300;
+}
+
 .navbar-link {
   font-size: 1.7rem;
   font-weight: 600;
@@ -110,6 +117,14 @@ body {
   letter-spacing: 0.3rem;
   text-transform: uppercase;
   position: relative;
+}
+
+.change.navbar-link {
+  color: #fff;
+}
+
+.change.navbar-link::before {
+  width: 130%;
 }
 
 .navbar-link:before {
@@ -171,10 +186,11 @@ body {
 }
 
 .progress-percent {
-  width: 90%;
+  width: 0;
   height: 100%;
   background: #e41c6f;
   border-radius: 0.3rem;
+  transition: all 0.5s 0.5s ease-in-out;
 }
 
 .services {
@@ -299,3 +315,86 @@ body {
   transition: bottom 0.3s 0.3s;
 }
 /* End of Section 3 */
+
+/* Section 4 */
+.section-4 {
+  width: 100%;
+  height: 70vh;
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.section-4-heading {
+  color: #fff;
+  box-shadow: none;
+  border-color: #fff;
+  margin-bottom: 5rem;
+}
+
+.contact-form {
+  width: 50rem;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  background: #eef;
+  font-size: 1.5rem;
+  border: 0.2rem solid #e41c6f;
+  color: #555;
+}
+
+.contact-form textarea {
+  height: 15rem;
+  width: 100%;
+  resize: none;
+}
+
+.contact-form .contact-form-btn {
+  background-color: #e41c6f;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  cursor: pointer;
+}
+/* End of Section 4 */
+
+/* Section 5 */
+.section-5 {
+  width: 100%;
+  height: 30vh;
+  background: #222;
+  flex-direction: column;
+}
+
+.social-media {
+  margin: 0 0 5rem 0;
+}
+
+.social-media-link {
+  margin: 0 2rem;
+  padding: 0.7rem;
+  background: #e41c6f;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+
+.social-media-link i {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.copyright {
+  color: #888;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+  text-align: center;
+}
+/* End of Section 5 */

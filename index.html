@@ -21,7 +21,7 @@
   <body>
     <div class="container">
       <!-- Section 1 -->
-      <section class="section-1 center">
+      <section class="section-1 center" id="home">
         <h1 class="section-1-heading">Web Developer</h1>
         <img src="images/john-smith.jpg" alt="John Smith" class="person-img" />
         <h3 class="person-name">John Smith</h3>
@@ -32,14 +32,14 @@
       <!-- Navbar -->
       <nav class="navbar center">
         <a href="#home" class="navbar-link">Home</a>
-        <a href="#" class="navbar-link">About</a>
-        <a href="#" class="navbar-link">Porfolio</a>
-        <a href="#" class="navbar-link">Contact</a>
+        <a href="#about" class="navbar-link">About</a>
+        <a href="#projects" class="navbar-link">Porfolio</a>
+        <a href="#contact" class="navbar-link">Contact</a>
       </nav>
       <!-- End of Navbar -->
 
       <!-- Section 2 -->
-      <section class="section-2">
+      <section class="section-2" id="about">
         <h1 class="section-heading">About Me</h1>
         <div class="progress-bars-wrapper">
           <div class="progress-bar">
@@ -93,7 +93,7 @@
       <!-- End of Section 2 -->
 
       <!-- Section 3 -->
-      <section class="section-3">
+      <section class="section-3" id="projects">
         <h1 class="section-heading">My Projects</h1>
         <div class="projects-wrapper center">
           <div class="project">
@@ -179,6 +179,38 @@
         </div>
       </section>
       <!-- End of Section 3 -->
+
+      <!-- Section 4 -->
+      <section class="section-4" id="contact">
+        <h1 class="section-heading section-4-heading">Contact Me</h1>
+        <form class="contact-form center">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Message"></textarea>
+          <input type="submit" value="Submit" class="contact-form-btn" />
+        </form>
+      </section>
+      <!-- End of Section 4 -->
+
+      <!-- Section 5 -->
+      <footer class="section-5 center">
+        <div class="social-media">
+          <a href="#none" class="social-media-link"
+            ><i class="fab fa-github-square" aria-hidden="true"></i
+          ></a>
+          <a href="#none" class="social-media-link"
+            ><i class="fab fa-youtube" aria-hidden="true"></i
+          ></a>
+          <a href="#none" class="social-media-link"
+            ><i class="fab fa-facebook-square" aria-hidden="true"></i
+          ></a>
+          <a href="#none" class="social-media-link"
+            ><i class="fab fa-instagram-square" aria-hidden="true"></i
+          ></a>
+        </div>
+        <p class="copyright">Copyright &copy; ThaoY All Right Reserved</p>
+      </footer>
+      <!-- End of Section 5 -->
     </div>
     <script src="script.js"></script>
   </body>
